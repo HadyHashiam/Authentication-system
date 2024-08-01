@@ -1,0 +1,550 @@
+{
+	"info": {
+		"_postman_id": "876fd71c-9b2d-4c4e-a044-43705dd86b1d",
+		"name": "Authontcation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33185913"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "admin service",
+					"item": [
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Hady",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "hady@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0113111112",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "user",
+											"type": "text"
+										},
+										{
+											"key": "passwordConfirm",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get List of Users",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get specific User",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/users/66aad76bfe7732be00f35813",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"66aad76bfe7732be00f35813"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete specific User",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/users/66aad9ed0e7cc857c3600b0c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"66aad9ed0e7cc857c3600b0c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update specific User",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hady",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "ebrahem@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/66aada1666126e2614d8c597",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"66aada1666126e2614d8c597"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update specific User password",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmFhZDc2YmZlNzczMmJlMDBmMzU4MTMiLCJpYXQiOjE3MjI0NzIzNDYsImV4cCI6MTczMDI0ODM0Nn0.kDX4sRe9nQ6Vg2yuaHdwCn7rZzzUwBcB-zK3092QBBI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"currentPassword\" : \"123456789\" ,\r\n    \"password\" : \"NewPassword11\" ,\r\n    \"passwordConfirm\" : \"NewPassword11\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/changePassword/66aada1666126e2614d8c597",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"changePassword",
+										"66aada1666126e2614d8c597"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user service",
+					"item": [
+						{
+							"name": "get me",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzNzcyNTAsImV4cCI6MTczMDE1MzI1MH0.lcZ9pS2iutdakHDZuE7OYwwyr-lpp3gd5FH4TKH1amA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/users/getMe?id=66a9640a440ba11eff7957e5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"getMe"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "66a9640a440ba11eff7957e5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "change My password",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzNzkyNTYsImV4cCI6MTczMDE1NTI1Nn0.La_ZHvSpduT4XmnYA3SHFN7KjRJHITXyqvi7uTyFzzA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"123456789\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/changeMyPassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"changeMyPassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateMe",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzODEwODksImV4cCI6MTczMDE1NzA4OX0.cj9eGVY20hsBmiVOuv_kMisFqwihtkD-XCMC4ejYtvA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"hadyyyyy\",\r\n    \"email\":\"hadyhashim17@gmail.com\",\r\n    \"phone\":\"01115236987\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/updateMe",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"updateMe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete me",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzODE3NjgsImV4cCI6MTczMDE1Nzc2OH0.qs-0dM-cy3YFQSWSFmQB5bni2y6k4IvkgTD7pripCYQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/users/deleteMe",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"deleteMe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forget Password mail",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzODE3NjgsImV4cCI6MTczMDE1Nzc2OH0.qs-0dM-cy3YFQSWSFmQB5bni2y6k4IvkgTD7pripCYQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"hadyhashim17@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/forgotPassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"forgotPassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verifyResetCode",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzODE3NjgsImV4cCI6MTczMDE1Nzc2OH0.qs-0dM-cy3YFQSWSFmQB5bni2y6k4IvkgTD7pripCYQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"resetCode\":\"322005\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/verifyResetCode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"verifyResetCode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resetPassword",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmE5NjQwYTQ0MGJhMTFlZmY3OTU3ZTUiLCJpYXQiOjE3MjIzODI5NzcsImV4cCI6MTczMDE1ODk3N30.0fYj1C7cO9745kyDBPBDJQc0LlTUg9I2Ljs1B1WLrVM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"hadyhashim17@gmail.com\",\r\n    \"newPassword\":\"123456789\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/resetPassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"resetPassword"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hady\"  ,\r\n    \"email\":\"hadyhashim17@gmail.com\",\r\n    \"password\": \"123456789\" ,\r\n    \"passwordConfirm\" : \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\":\"hadyhashim17@gmail.com\",\r\n    \"password\": \"123456789\" \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
